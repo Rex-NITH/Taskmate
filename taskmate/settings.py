@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-
+import django-heroku
 from pathlib import Path
 import os
 import environ
@@ -137,3 +137,5 @@ CRISPY_TEMPLATE_PACK ='bootstrap4'
 LOGIN_REDIRECT_URL = 'todolist'
 
 LOGIN_URL = "login"
+
+django_heroku.settings(locals())
